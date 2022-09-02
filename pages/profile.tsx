@@ -22,7 +22,7 @@ const ProfilePage = () => {
   if (!ownedNFTs || !ownedNFTs.length)
     return (
       <Container>
-        <h1>You don't own any NFTs and you will never be happy</h1>
+        <h1>You don&apos;t own any NFTs and you will never be happy</h1>
       </Container>
     );
   return (

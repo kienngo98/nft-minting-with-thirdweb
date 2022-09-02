@@ -43,6 +43,18 @@ const NavBar = (props: NavBarProps) => {
       {pageLoaded && router.pathname === "/profile" && isConnected && (
         <ConnectWalletButton />
       )} */}
+      <Link href="/profile">
+        <a
+          style={{
+            marginTop: "auto",
+            marginRight: "40px",
+            marginBottom: "auto",
+            color: "white",
+          }}
+        >
+          Profile
+        </a>
+      </Link>
     </div>
   );
 };

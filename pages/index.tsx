@@ -14,7 +14,7 @@ const NftItem_ = dynamic(() => import("../components/NftItem/NftItem"));
 const Home: NextPage = () => {
   const CONTRACT_ADDRESS = "0x56Fd0bFeF24e0526CD3dD641CDaAf31CBa2d957F";
   // Get the NFT collection using its contract address
-  const nftCollection = useNFTCollection(CONTRACT_ADDRESS);
+  const nftCollection = useNFTDrop(CONTRACT_ADDRESS);
 
   // Load all the NFTs from the collection (with a loading flag)
   const { data: nfts, isLoading } = useNFTs(nftCollection);

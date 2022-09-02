@@ -6,6 +6,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider
       desiredChainId={activeChainId}
+      chainRpc={{ [ChainId.Avalanche]: "https://rpc.ankr.com/avalanche" }}
     >
       <Component {...pageProps} />
     </ThirdwebProvider>

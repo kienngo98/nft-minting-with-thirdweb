@@ -10,7 +10,7 @@ const ProfilePage = () => {
   const { contract } = useContract(CONTRACT_ADDRESS);
   const {
     data: ownedNFTs,
-    isLoading,
+    isLoading,  
     error,
   } = useOwnedNFTs(contract?.nft, address);
   if (!address)

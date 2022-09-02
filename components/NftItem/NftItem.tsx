@@ -23,7 +23,12 @@ const NftItem = ({ nft }: { nft: any }) => {
   return (
     <div className={styles.NftItem}>
       {/* <ThirdwebNftMedia metadata={nft.metadata} /> */}
-      <Image src={nft.metadata.image} width={320} height={320}></Image>
+      <Image
+        alt={nft.metadata.description}
+        src={nft.metadata.image}
+        width={320}
+        height={320}
+      ></Image>
       <div className={styles.Bottom}>
         <div className={styles.NftDesc}>
           {nft.metadata.description}
@@ -31,6 +36,7 @@ const NftItem = ({ nft }: { nft: any }) => {
           <a
             style={{ textDecoration: "undelined", color: "blue" }}
             target="_blank"
+            rel="noreferrer"
             href={nft.metadata.image}
           >
             View full image
